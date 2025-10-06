@@ -5,7 +5,7 @@ provider "azurerm" {
 
 
 resource "azurerm_virtual_machine" "test" {
-  name                  = "$test-vm"
+  name                  = "test-vm"
   location              = "East US"
   resource_group_name   = "project-ecom"
   network_interface_ids = ["/subscriptions/838d8d5b-1157-4504-a71d-1ef48775bbe3/resourceGroups/project-ecom/providers/Microsoft.Network/networkInterfaces/terraform-testing"]
