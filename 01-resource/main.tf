@@ -1,4 +1,3 @@
-# Configure the Microsoft Azure Provider
 provider "azurerm" {
   features {}
   subscription_id = "838d8d5b-1157-4504-a71d-1ef48775bbe3"
@@ -31,5 +30,8 @@ resource "azurerm_virtual_machine" "test" {
     computer_name  = "test-vm"
     admin_username = "tushar"
     admin_password = "tushar@12345"
+  }
+  os_profile_linux_config {
+    disable_password_authentication = false
   }
 }
