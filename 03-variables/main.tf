@@ -86,3 +86,13 @@ output "var-form-devvars" {
   value = var.env
 
 }
+
+
+
+
+variable "server_count" {}
+
+output "erver_count" {
+  value = var.server_count
+
+}
