@@ -1,5 +1,5 @@
 # just like functions
 
-module "" {
-  source = ""
+module "sample1" {
+  source = "./sample"
 }
