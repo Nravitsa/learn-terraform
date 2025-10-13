@@ -11,10 +11,3 @@ terraform {
     key                  = "test.terraform.tfstate"                # Can be passed via `-backend-config=`"key=<blob key name>"` in the `init` command.
   }
 }
-
-
-export ARM_SUBSCRIPTION_ID="301ed75f-fd10-4107-9536-f4b06dabe157"
-export ARM_TENANT_ID="azure-cli-2025-10-13-01-44-49"
-export ARM_CLIENT_ID="vdj8Q~l2a~QKFyQolKw3CTd.lB-4FDUrAHWJrarU"
-export ARM_CLIENT_SECRET="dfbc04b9-9927-406a-ba3c-4799083e9ed8"
-
