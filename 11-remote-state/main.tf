@@ -12,4 +12,3 @@ terraform {
   }
 }
 
-d sp create-for-rbac --name azure-cli-2025-10-13-01-44-49 --role Contributor --scopes /subscriptions/838d8d5b-1157-4504-a71d-1ef48775bbe3/resourceGroups/project-ecom
