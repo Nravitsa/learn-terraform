@@ -13,6 +13,12 @@ provider "vault" {
 }
 
 resource "local_file" "foo" {
-  filename = jsonencode(data.vault_generic_secret.secret)
+  filename = jsonencode(data.vault_generic_secret.secret.data)
   content = "/tmp/vault"
+}
+
+
+resource "local_file" "foo" {
+  filename = data.vault_generic_secret.secret.data_json["password"]
+  content = "/tmp/vault-pass"
 }
