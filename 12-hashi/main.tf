@@ -9,7 +9,7 @@ variable "token" {}
 
 
 provider "vault" {
-  address        = "http://vault.tusharbytes.com/"
+  address        = "http://vault.tusharbytes.com:8200/"
   token = var.token
 }
 
