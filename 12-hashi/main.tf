@@ -1,5 +1,4 @@
 
-
 data "vault_generic_secret" "secret" {
   path = "demo/ssh"
 }
@@ -13,4 +12,7 @@ provider "vault" {
   token = var.token
 }
 
-
+resource "local_file" "foo" {
+  filename = data.vault_generic_secret.secret
+  content = "/tmp/vault"
+}
